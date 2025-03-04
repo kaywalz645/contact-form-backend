@@ -26,7 +26,7 @@ const MessageSchema = new mongoose.Schema({
 const Message = mongoose.model("Message", MessageSchema);
 
 // POST Route to Handle Form Submission
-app.post("/contact", async (req, res) => {
+app.post("/", async (req, res) => {
   try {
     const { name, email, message } = req.body;
 
